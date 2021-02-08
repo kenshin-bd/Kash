@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+
+
+}
+.main-header{
+    background-color:#F3E1E1;
+    padding-bottom: 150vh;
+}
+.img{
+    width: 600px;
+    height: 600px;
+    position:absolute;
+
+    left:50%;
+    transform:translate( -50%) ;
+
+}
+.img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 0 0 #ff9b93;
+    transition: 0.5s ease-out;
+    
+}
+
+.h1{
+    font-size: 100px ;
+    color:#41584bf5;
+    letter-spacing: 10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate( -50% ,-50%);
+    text-align: center;
+    transition:  all ease-in-out 600ms;
+        
+}
+.h1:hover{
+    
+    cursor: pointer;
+    font-size: 100px;
+    padding:20px;
+    box-shadow: 3px 3px 0 0 #ff9b93;
+  
+    
+    text-shadow: 12px 12px #ff9b93;
+    
+    
+}
+
+.nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height:8vh;
+    background-color:#ff9b93;
+    font-family: 'Poppins', sans-serif;
+    font-weight:bolder;  
+}
+.logo{
+    color: #41584bf5;
+    letter-spacing: 5px;
+    font-size:20px;
+}
+.nav-links{
+    display:flex;
+    justify-content: space-around;
+
+    width:25%;
+    
+}
+.nav-links li{
+   
+    list-style:none;
+    
+}
+.nav-links a {
+    
+    color:#41584bf5;
+    text-decoration:none;
+    font-weight: bold;
+    font-size:14px;
+    position: relative;
+    
+    
+
+}
+.nav-links a:hover{
+    color: #34463bf5;
+}
+.nav-links a:before{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #41584bf5;
+    position:absolute;
+    top: 0px;
+    width:0%;
+    transition: all ease-in-out 600ms;
+}
+.nav-links a:hover::before{
+    width:100%;
+}
+.burger{
+    display:none;
+}
+.burger div{
+    width:25px;
+    height:4px;
+    background-color:#41584bf5;
+    margin:4px;
+    
+}
+@media screen and (max-width:1100px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position:absolute;
+        right:0px;
+        height:92vh;
+        top:8vh;
+        background-color:#ff9b93;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform:translateX( 100%);
+        transition: .5s ease-in;
+        
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display:block;
+    }
+}
+.nav-active {
+    transform:translateX(0%);
+
+}
+.man{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;
+}
+#text{
+    font-size:2rem;
+    color:#41584bf5;
+    transform:translate(0, 30px)
+}
+
+.line{
+    animation: anim 0.5s infinite linear;
+}
+@keyframes anim{
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+}
+footer{
+    margin:0;
+    padding: 0;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#fff3b2;
+}
+.foot ul{
+    position:relative;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+.foot ul li{
+    position:relative;
+    list-style:none;
+    width: 60px;
+    height:60px;
+    margin:0 30px;
+    transform:rotate(-30deg) skew(25deg);
+    background:#ccc;
+
+}
+.foot ul li span{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    font-size:30px;
+}
+.foot ul li:hover span:nth-child(5){
+    transform:translate(40px,-40px);
+    opacity: 1;
+}
+.foot ul li:hover span:nth-child(4){
+    transform:translate(30px,-30px);
+    opacity: .8;
+}
+.foot ul li:hover span:nth-child(3){
+    transform:translate(20px,-20px);
+    opacity: .6;
+}
+.foot ul li:hover span:nth-child(2){
+    transform:translate(10px,-10px);
+    opacity: .4;
+}
+.foot ul li:hover span:nth-child(1){
+    transform:translate(0px,0px);
+    opacity: .2;
+}
+.foot ul li:nth-child(1) span
+{
+    background:#7e89a0;
+}
+.foot ul li:nth-child(2) span
+{
+    background:#b5ffa2;
+}
+.foot ul li:nth-child(3) span
+{
+    background:#ff5c5c;
+}
+.h5{
+    font-size: 40px;
+    color:#41584bf5 ;
+    position:absolute;
+    left:50%;
+    transform: translate(-50%);
+
+}
+.chobi
+{
+  position:relative;
+  top:20px;
+  left:15%;
+  width:70%;
+  height:auto;
+
+
+}
+.foot1 ul{
+    position:relative;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+.foot1 ul li{
+    position:relative;
+    list-style:none;
+    width: 360px;
+    height:360px;
+    margin:0 30px;
+    transform:rotate(-30deg) skew(25deg);
+    background:#ccc;
+
+}
+.foot1 ul li span{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgb(221, 215, 215);
+    transition: 0.5s;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(248, 25, 25);
+    font-size:90px;
+}
+.foot1 ul li:hover span:nth-child(5){
+    transform:translate(40px,-40px);
+    opacity: 1;
+}
+.foot1 ul li:hover span:nth-child(4){
+    transform:translate(30px,-30px);
+    opacity: .8;
+}
+.foot1 ul li:hover span:nth-child(3){
+    transform:translate(20px,-20px);
+    opacity: .6;
+}
+.foot1 ul li:hover span:nth-child(2){
+    transform:translate(10px,-10px);
+    opacity: .4;
+}
+.foot1 ul li:hover span:nth-child(1){
+    transform:translate(0px,0px);
+    opacity: .2;
+}
+.foot1 ul li:nth-child(1) span
+{
+    background:#7e89a0;
+}
+.foot1 ul li:nth-child(2) span
+{
+    background:#b5ffa2;
+}
+.foot1 ul li:nth-child(3) span
+{
+    background:#ff5c5c;
+}
+.ha{
+    margin-top: 20%;
+    font-size: 100px ;
+    color:#41584bf5;
+    letter-spacing: 10px;
+    position:relative;
+    top:80%;
+    left:50%;
+    transform: translate( -50% ,-50%);
+    text-align: center;
+    transition:  all ease-in-out 600ms;
+}
+.ha:hover{
+    
+    cursor: pointer;
+    font-size: 100px;
+    padding:20px;
+    box-shadow: 3px 3px 0 0 #ff9b93;
+  
+    
+    text-shadow: 12px 12px #ff9b93;
+    
+    
+}
+.ha a{
+    text-decoration:none;
+    color:#41584bf5;
+
+}
