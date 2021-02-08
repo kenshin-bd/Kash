@@ -117,31 +117,8 @@
     margin:4px;
     
 }
-@media screen and (max-width:300px){
-    body{
-        overflow-x: hidden;
-    }
-    .nav-links{
-        position:absolute;
-        right:0px;
-        height:92vh;
-        top:8vh;
-        background-color:#ff9b93;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        width: 30%;
-        transform:translateX( 100%);
-        transition: .5s ease-in;
-        
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .burger{
-        display:block;
-    }
-}
+
+
 .nav-active {
     transform:translateX(0%);
 
